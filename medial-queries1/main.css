@@ -1,24 +1,29 @@
 body {
-  background: blanchedalmond;
+  background: blanchedalmond
 }
- /* Media Query for Wider Screens */
-@media (min-width: 600px) {
-  .container {
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-  
-  .a {
-      flex-basis: 100%;
-  }
-  
-  .b {
-      flex: 2;
-  }
-  
-  .c {
-      flex: 1;
-  }
+
+
+
+/* Base Styles (Mobile) */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.box {
+  flex: 1;
+  min-height: 100px;
+  border: 1px solid #000;
+  margin: 5px;
+  text-align: center;
+  background-color: #f0f0f0;
 }
 
 /* Media Query for Wider Screens */
@@ -39,4 +44,8 @@ body {
   .c {
       flex: 1;
   }
+}
+
+body {
+  background: blanchedalmond;
 }
