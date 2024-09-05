@@ -2,29 +2,34 @@ body {
   background: blanchedalmond
 }
 
-
-
-/* Base Styles (Mobile) */
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+  border: 1px solid teal;
 }
+
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.box {
-  flex: 1;
-  min-height: 100px;
-  border: 1px solid #000;
-  margin: 5px;
-  text-align: center;
-  background-color: #f0f0f0;
+
+header, footer  {
+  flex-grow: 3;
+  background-color: lightblue;
+
+
 }
+
+
+main {
+  flex-grow:1;
+  background-color: lightblue;
+}
+
 
 /* Media Query for Wider Screens */
 @media (min-width: 600px) {
@@ -44,8 +49,4 @@ body, html {
   .c {
       flex: 1;
   }
-}
-
-body {
-  background: blanchedalmond;
 }
