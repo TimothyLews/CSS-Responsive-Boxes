@@ -30,6 +30,34 @@ main {
   background-color: lightblue;
 }
 
+/* Add letters inside the containers */
+header::before {
+  content: "A";
+  font-size: 2rem;
+  color: darkblue;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+main::before {
+  content: "B";
+  font-size: 2rem;
+  color: darkblue;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer::before {
+  content: "C";
+  font-size: 2rem;
+  color: darkblue;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 /* Media Query for Wider Screens */
 @media (min-width: 600px) {
